@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <title>Árvore de Habilidades</title>
@@ -26,11 +27,15 @@
     .icon {
       width: 64px;
       height: 64px;
-      background-color: #222;
-      border: 3px solid #aaa;
+      background-color: ##222;
+      border: 3px solid ##aaa;
       border-radius: 10px;
       background-size: cover;
       cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .icon:hover {
+      transform: scale(1.1);
     }
     svg.lines {
       position: absolute;
@@ -41,44 +46,49 @@
       pointer-events: none;
       z-index: 0;
     }
-    #skillInfo {
+    ##skillInfo {
       position: fixed;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       background-color: rgba(0, 0, 0, 0.7);
-      color: #fff;
+      color: ##fff;
       padding: 20px;
       border-radius: 10px;
       display: none;
       max-width: 400px;
       text-align: center;
     }
-    #skillInfo h3 {
+    ##skillInfo h3 {
       margin-bottom: 15px;
     }
   </style>
 </head>
 <body>
   <div class="tree-container" id="tree">
-    <svg class="lines" id="lines"></svg><div class="row" id="row1">
-  <div class="icon" style="background-image: url(1.png);" data-skill-name="Skill 1"></div>
-</div>
-<div class="row" id="row2">
-  <div class="icon" style="background-image: url(2.png);" data-skill-name="Skill 2"></div>
-  <div class="icon" style="background-image: url(3.png);" data-skill-name="Skill 3"></div>
-</div>
-<div class="row" id="row3">
-  <div class="icon" style="background-image: url(4.png);" data-skill-name="Skill 4"></div>
-  <div class="icon" style="background-image: url(5.png);" data-skill-name="Skill 5"></div>
-  <div class="icon" style="background-image: url(6.png);" data-skill-name="Skill 6"></div>
-</div>
-
-  </div>  <div id="skillInfo">
+    <svg class="lines" id="lines"></svg>
+    <div class="row" id="row1">
+      <div class="icon" style="background-image: url(1.png);" data-skill-name="Skill 1" data-skill-level="3"></div>
+    </div>
+    <div class="row" id="row2">
+      <div class="icon" style="background-image: url(2.png);" data-skill-name="Skill 2" data-skill-level="16"></div>
+      <div class="icon" style="background-image: url(3.png);" data-skill-name="Skill 3" data-skill-level="17"></div>
+    </div>
+    <div class="row" id="row3">
+      <div class="icon" style="background-image: url(4.png);" data-skill-name="Skill 4" data-skill-level="18"></div>
+      <div class="icon" style="background-image: url(5.png);" data-skill-name="Skill 5" data-skill-level="19"></div>
+      <div class="icon" style="background-image: url(6.png);" data-skill-name="Skill 6" data-skill-level="20"></div>
+    </div>
+  </div>
+  
+  <div id="skillInfo">
     <h3 id="skillTitle"></h3>
     <p id="skillDescription"></p>
+    <p id="skillLevel"></p>
     <button onclick="closeSkillInfo()">Fechar</button>
-  </div>  <script>
+  </div>
+
+  <script>
     function connectIcons() {
       const svg = document.getElementById('lines');
       svg.innerHTML = '';
@@ -91,79 +101,4 @@
         for (let j = 0; j < currentRow.length; j++) {
           for (let k = 0; k < nextRow.length; k++) {
             if (Math.abs(j - k) <= 1) {
-              const rectA = currentRow[j].getBoundingClientRect();
-              const rectB = nextRow[k].getBoundingClientRect();
-
-              const startX = rectA.left + rectA.width / 2 + window.scrollX;
-              const startY = rectA.top + rectA.height / 2 + window.scrollY;
-              const endX = rectB.left + rectB.width / 2 + window.scrollX;
-              const endY = rectB.top + rectB.height / 2 + window.scrollY;
-
-              const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
-              line.setAttribute('x1', startX);
-              line.setAttribute('y1', startY);
-              line.setAttribute('x2', endX);
-              line.setAttribute('y2', endY);
-              line.setAttribute('stroke', '#c7b279');
-              line.setAttribute('stroke-width', '2');
-              svg.appendChild(line);
-            }
-          }
-        }
-      }
-    }
-
-    function showSkillInfo(event) {
-      const skillName = event.target.getAttribute('data-skill-name');
-      const skillInfo = getSkillInfo(skillName);
-
-      if (skillInfo) {
-        document.getElementById('skillTitle').textContent = skillInfo.name;
-        document.getElementById('skillDescription').textContent = skillInfo.description;
-        document.getElementById('skillInfo').style.display = 'block';
-      }
-    }
-
-    function closeSkillInfo() {
-      document.getElementById('skillInfo').style.display = 'none';
-    }
-
-    function getSkillInfo(skillName) {
-      const skills = {
-        "Skill 1": {
-          name: "Skill 1",
-          description: "Golpe rápido com a espada que causa sangramento."
-        },
-        "Skill 2": {
-          name: "Skill 2",
-          description: "Explosão mágica que atordoa os inimigos."
-        },
-        "Skill 3": {
-          name: "Skill 3",
-          description: "Barreira de fogo que queima quem se aproxima."
-        },
-        "Skill 4": {
-          name: "Skill 4",
-          description: "Golpe giratório que atinge vários inimigos."
-        },
-        "Skill 5": {
-          name: "Skill 5",
-          description: "Invocação de um espectro que luta ao seu lado."
-        },
-        "Skill 6": {
-          name: "Skill 6",
-          description: "Ataque com escudo que empurra os inimigos para trás."
-        }
-      };
-      return skills[skillName] || null;
-    }
-
-    window.addEventListener('load', () => {
-      const icons = document.querySelectorAll('.icon');
-      icons.forEach(icon => {
-        icon.addEventListener('click', showSkillInfo);
-      });
-      connectIcons();
-    });
-  </script></body>
-</html>
+              const rectA = currentRow[j․․․
