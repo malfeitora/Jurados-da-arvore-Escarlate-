@@ -4,21 +4,52 @@
   <meta charset="UTF-8">
   <title>Árvore de Habilidades</title>
   <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Cinzel', serif;
+      background-image: url('https://i.imgur.com/rZ1P1Zq.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      color: #f0e6d2;
+    }
+
     .row {
       display: flex;
-      margin-bottom: 10px;
+      justify-content: center;
+      margin-bottom: 20px;
     }
+
     .icon {
       width: 64px;
       height: 64px;
       background-size: cover;
-      margin-right: 5px;
-      border: 2px solid #333;
+      margin: 5px;
+      border: 3px solid #a1863e;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #000;
       cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.3s;
     }
+
+    .icon:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 15px #ffd700;
+    }
+
+    h1 {
+      text-align: center;
+      padding: 20px;
+      font-size: 40px;
+      text-shadow: 2px 2px 5px #000;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
   </style>
 </head>
 <body>
+
+<h1>Árvore de Habilidades</h1>
 
 <!-- Habilidades -->
 <div class="row" id="row1">
