@@ -6,18 +6,26 @@
   <style>
     body {
       margin: 0;
-      padding: 0;
-      font-family: 'Cinzel', serif;
-      background-image: url('https://i.imgur.com/rZ1P1Zq.jpg');
+      padding: 20px;
+      font-family: 'Garamond', serif;
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWkbAM130_7CvsqZdfB8h7bsP89mtkCweHAW7q4MlQoM8BEUlp6J0jjCs&s=10');
       background-size: cover;
       background-attachment: fixed;
-      color: #f0e6d2;
+      color: #f8f8f2;
+      text-shadow: 1px 1px 2px #000;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 36px;
+      color: #e0d6b6;
     }
 
     .row {
       display: flex;
       justify-content: center;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
 
     .icon {
@@ -25,154 +33,164 @@
       height: 64px;
       background-size: cover;
       margin: 5px;
-      border: 3px solid #a1863e;
+      border: 2px solid #a58b5f;
       border-radius: 8px;
       box-shadow: 0 0 10px #000;
       cursor: pointer;
-      transition: transform 0.2s, box-shadow 0.3s;
+      transition: transform 0.2s, box-shadow 0.2s;
     }
 
     .icon:hover {
       transform: scale(1.1);
-      box-shadow: 0 0 15px #ffd700;
+      box-shadow: 0 0 15px #f2e9d0;
     }
 
-    h1 {
-      text-align: center;
+    .container {
+      background: rgba(0, 0, 0, 0.5);
       padding: 20px;
-      font-size: 40px;
-      text-shadow: 2px 2px 5px #000;
+      border-radius: 20px;
+      border: 2px solid #a58b5f;
+      max-width: 900px;
+      margin: auto;
     }
-
-    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
   </style>
 </head>
 <body>
 
-<h1>Árvore de Habilidades</h1>
+<div class="container">
+  <h1>Árvore de Habilidades</h1>
 
-<!-- Habilidades -->
-<div class="row" id="row1">
-  <div class="icon" style="background-image: url(1.png);"></div>
-  <div class="icon" style="background-image: url(2.png);"></div>
-  <div class="icon" style="background-image: url(3.png);"></div>
-  <div class="icon" style="background-image: url(4.png);"></div>
-  <div class="icon" style="background-image: url(5.png);"></div>
-  <div class="icon" style="background-image: url(6.png);"></div>
-  <div class="icon" style="background-image: url(7.png);"></div>
-</div>
-<div class="row" id="row2">
-  <div class="icon" style="background-image: url(8.png);"></div>
-  <div class="icon" style="background-image: url(9.png);"></div>
-  <div class="icon" style="background-image: url(10.png);"></div>
-  <div class="icon" style="background-image: url(11.png);"></div>
-  <div class="icon" style="background-image: url(12.png);"></div>
-  <div class="icon" style="background-image: url(13.png);"></div>
-  <div class="icon" style="background-image: url(14.png);"></div>
-</div>
-<div class="row" id="row3">
-  <div class="icon" style="background-image: url(15.png);"></div>
-  <div class="icon" style="background-image: url(16.png);"></div>
-  <div class="icon" style="background-image: url(17.png);"></div>
-  <div class="icon" style="background-image: url(18.png);"></div>
-  <div class="icon" style="background-image: url(19.png);"></div>
-  <div class="icon" style="background-image: url(20.png);"></div>
-  <div class="icon" style="background-image: url(21.png);"></div>
-</div>
-<div class="row" id="row4">
-  <div class="icon" style="background-image: url(22.png);"></div>
-  <div class="icon" style="background-image: url(23.png);"></div>
-  <div class="icon" style="background-image: url(24.png);"></div>
-  <div class="icon" style="background-image: url(25.png);"></div>
-  <div class="icon" style="background-image: url(26.png);"></div>
-  <div class="icon" style="background-image: url(27.png);"></div>
-  <div class="icon" style="background-image: url(28.png);"></div>
-</div>
-<div class="row" id="row5">
-  <div class="icon" style="background-image: url(29.png);"></div>
-  <div class="icon" style="background-image: url(30.png);"></div>
-  <div class="icon" style="background-image: url(31.png);"></div>
-  <div class="icon" style="background-image: url(32.png);"></div>
-  <div class="icon" style="background-image: url(33.png);"></div>
-  <div class="icon" style="background-image: url(34.png);"></div>
-  <div class="icon" style="background-image: url(35.png);"></div>
-</div>
-<div class="row" id="row6">
-  <div class="icon" style="background-image: url(36.png);"></div>
-  <div class="icon" style="background-image: url(37.png);"></div>
-  <div class="icon" style="background-image: url(38.png);"></div>
-  <div class="icon" style="background-image: url(39.png);"></div>
-  <div class="icon" style="background-image: url(40.png);"></div>
-  <div class="icon" style="background-image: url(41.png);"></div>
-  <div class="icon" style="background-image: url(42.png);"></div>
-</div>
-<div class="row" id="row7">
-  <div class="icon" style="background-image: url(43.png);"></div>
-  <div class="icon" style="background-image: url(44.png);"></div>
-  <div class="icon" style="background-image: url(45.png);"></div>
-  <div class="icon" style="background-image: url(46.png);"></div>
-  <div class="icon" style="background-image: url(47.png);"></div>
-  <div class="icon" style="background-image: url(48.png);"></div>
-  <div class="icon" style="background-image: url(49.png);"></div>
-</div>
-<div class="row" id="row8">
-  <div class="icon" style="background-image: url(50.png);"></div>
+  <!-- Habilidades -->
+  <div class="row" id="row1">
+    <div class="icon" style="background-image: url(1.png);"></div>
+    <div class="icon" style="background-image: url(2.png);"></div>
+    <div class="icon" style="background-image: url(3.png);"></div>
+    <div class="icon" style="background-image: url(4.png);"></div>
+    <div class="icon" style="background-image: url(5.png);"></div>
+    <div class="icon" style="background-image: url(6.png);"></div>
+    <div class="icon" style="background-image: url(7.png);"></div>
+  </div>
+  <div class="row" id="row2">
+    <div class="icon" style="background-image: url(8.png);"></div>
+    <div class="icon" style="background-image: url(9.png);"></div>
+    <div class="icon" style="background-image: url(10.png);"></div>
+    <div class="icon" style="background-image: url(11.png);"></div>
+    <div class="icon" style="background-image: url(12.png);"></div>
+    <div class="icon" style="background-image: url(13.png);"></div>
+    <div class="icon" style="background-image: url(14.png);"></div>
+  </div>
+  <div class="row" id="row3">
+    <div class="icon" style="background-image: url(15.png);"></div>
+    <div class="icon" style="background-image: url(16.png);"></div>
+    <div class="icon" style="background-image: url(17.png);"></div>
+    <div class="icon" style="background-image: url(18.png);"></div>
+    <div class="icon" style="background-image: url(19.png);"></div>
+    <div class="icon" style="background-image: url(20.png);"></div>
+    <div class="icon" style="background-image: url(21.png);"></div>
+  </div>
+  <div class="row" id="row4">
+    <div class="icon" style="background-image: url(22.png);"></div>
+    <div class="icon" style="background-image: url(23.png);"></div>
+    <div class="icon" style="background-image: url(24.png);"></div>
+    <div class="icon" style="background-image: url(25.png);"></div>
+    <div class="icon" style="background-image: url(26.png);"></div>
+    <div class="icon" style="background-image: url(27.png);"></div>
+    <div class="icon" style="background-image: url(28.png);"></div>
+  </div>
+  <div class="row" id="row5">
+    <div class="icon" style="background-image: url(29.png);"></div>
+    <div class="icon" style="background-image: url(30.png);"></div>
+    <div class="icon" style="background-image: url(31.png);"></div>
+    <div class="icon" style="background-image: url(32.png);"></div>
+    <div class="icon" style="background-image: url(33.png);"></div>
+    <div class="icon" style="background-image: url(34.png);"></div>
+    <div class="icon" style="background-image: url(35.png);"></div>
+  </div>
+  <div class="row" id="row6">
+    <div class="icon" style="background-image: url(36.png);"></div>
+    <div class="icon" style="background-image: url(37.png);"></div>
+    <div class="icon" style="background-image: url(38.png);"></div>
+    <div class="icon" style="background-image: url(39.png);"></div>
+    <div class="icon" style="background-image: url(40.png);"></div>
+    <div class="icon" style="background-image: url(41.png);"></div>
+    <div class="icon" style="background-image: url(42.png);"></div>
+  </div>
+  <div class="row" id="row7">
+    <div class="icon" style="background-image: url(43.png);"></div>
+    <div class="icon" style="background-image: url(44.png);"></div>
+    <div class="icon" style="background-image: url(45.png);"></div>
+    <div class="icon" style="background-image: url(46.png);"></div>
+    <div class="icon" style="background-image: url(47.png);"></div>
+    <div class="icon" style="background-image: url(48.png);"></div>
+    <div class="icon" style="background-image: url(49.png);"></div>
+  </div>
+  <div class="row" id="row8">
+    <div class="icon" style="background-image: url(50.png);"></div>
+  </div>
 </div>
 
 <!-- Script -->
 <script>
-  const habilidades = {
-    "1.png": { nivel: 1, descricao: "Ataque básico com lâmina espiritual." },
-    "2.png": { nivel: 2, descricao: "Golpe duplo com chance de sangramento." },
-    "3.png": { nivel: 3, descricao: "Barreira mágica reduz dano mágico." },
-    "4.png": { nivel: 4, descricao: "Explosão de fé que cura aliados." },
-    "5.png": { nivel: 5, descricao: "Aumenta velocidade por 3 segundos." },
-    "6.png": { nivel: 6, descricao: "Invoca lâminas etéreas ao redor do usuário." },
-    "7.png": { nivel: 7, descricao: "Golpe sombrio com chance de cegueira." },
-    "8.png": { nivel: 8, descricao: "Cura gradual ao longo do tempo." },
-    "9.png": { nivel: 9, descricao: "Salto aéreo com dano em área ao cair." },
-    "10.png": { nivel: 10, descricao: "Disparo de raio concentrado." },
-    "11.png": { nivel: 11, descricao: "Bênção que aumenta o ataque por 10s." },
-    "12.png": { nivel: 12, descricao: "Escudo que bloqueia o próximo ataque." },
-    "13.png": { nivel: 13, descricao: "Explosão de luz divina em área." },
-    "14.png": { nivel: 14, descricao: "Silencia inimigos próximos." },
-    "15.png": { nivel: 15, descricao: "Invocação de espinhos sombrios." },
-    "16.png": { nivel: 16, descricao: "Disparo venenoso com dano contínuo." },
-    "17.png": { nivel: 17, descricao: "Aumenta a resistência por 5s." },
-    "18.png": { nivel: 18, descricao: "Raio que salta entre inimigos." },
-    "19.png": { nivel: 19, descricao: "Grito que empurra e atordoa inimigos." },
-    "20.png": { nivel: 20, descricao: "Projétil sagrado que persegue o alvo." },
-    "21.png": { nivel: 21, descricao: "Restaura mana rapidamente por 3s." },
-    "22.png": { nivel: 22, descricao: "Forma de fumaça evita todo dano por 1s." },
-    "23.png": { nivel: 23, descricao: "Lança de fogo com dano em linha reta." },
-    "24.png": { nivel: 24, descricao: "Aura que cura aliados próximos." },
-    "25.png": { nivel: 25, descricao: "Meteoro flamejante em área." },
-    "26.png": { nivel: 26, descricao: "Explosão de gelo que reduz velocidade." },
-    "27.png": { nivel: 27, descricao: "Marca inimigo para receber dano extra." },
-    "28.png": { nivel: 28, descricao: "Armadura de luz reduz dano físico." },
-    "29.png": { nivel: 29, descricao: "Esfera de escuridão que consome mana." },
-    "30.png": { nivel: 30, descricao: "Invocação de lobo espiritual." },
-    "31.png": { nivel: 31, descricao: "Golpe com dano crítico aumentado." },
-    "32.png": { nivel: 32, descricao: "Revive automaticamente após morte." },
-    "33.png": { nivel: 33, descricao: "Corrente elétrica que paralisa." },
-    "34.png": { nivel: 34, descricao: "Aumenta chance de crítico por 10s." },
-    "35.png": { nivel: 35, descricao: "Estaca perfurante com dano aumentado." },
-    "36.png": { nivel: 36, descricao: "Grito inspirador aumenta ataque de aliados." },
-    "37.png": { nivel: 37, descricao: "Espada flamejante com dano contínuo." },
-    "38.png": { nivel: 38, descricao: "Disparo gélido com chance de congelar." },
-    "39.png": { nivel: 39, descricao: "Área proibida que reduz cura inimiga." },
-    "40.png": { nivel: 40, descricao: "Barreira que reflete feitiços." },
-    "41.png": { nivel: 41, descricao: "Sombra que duplica ataques por 3s." },
-    "42.png": { nivel: 42, descricao: "Arco espiritual com disparo duplo." },
-    "43.png": { nivel: 43, descricao: "Explosão solar que cega inimigos." },
-    "44.png": { nivel: 44, descricao: "Aura de proteção reduz dano recebido." },
-    "45.png": { nivel: 45, descricao: "Espada relâmpago que atordoa." },
-    "46.png": { nivel: 46, descricao: "Invocação de espectros atacantes." },
-    "47.png": { nivel: 47, descricao: "Corrente de escuridão que prende." },
-    "48.png": { nivel: 48, descricao: "Luz purificadora remove maldições." },
-    "49.png": { nivel: 49, descricao: "Destruição massiva em área." },
-    "50.png": { nivel: 50, descricao: "Ressurreição total com custo de mana." }
-  };
+  const habilidades = {};
+  const descricoes = [
+    "Ataque básico com lâmina espiritual.",
+    "Golpe duplo com chance de sangramento.",
+    "Barreira mágica reduz dano mágico.",
+    "Explosão de fé que cura aliados.",
+    "Aumenta velocidade por 3 segundos.",
+    "Invoca lâminas etéreas ao redor do usuário.",
+    "Golpe sombrio com chance de cegueira.",
+    "Cura gradual ao longo do tempo.",
+    "Salto aéreo com dano em área ao cair.",
+    "Disparo de raio concentrado.",
+    "Bênção que aumenta o ataque por 10s.",
+    "Escudo que bloqueia o próximo ataque.",
+    "Explosão de luz divina em área.",
+    "Silencia inimigos próximos.",
+    "Invocação de espinhos sombrios.",
+    "Disparo venenoso com dano contínuo.",
+    "Aumenta a resistência por 5s.",
+    "Raio que salta entre inimigos.",
+    "Grito que empurra e atordoa inimigos.",
+    "Projétil sagrado que persegue o alvo.",
+    "Restaura mana rapidamente por 3s.",
+    "Forma de fumaça evita todo dano por 1s.",
+    "Lança de fogo com dano em linha reta.",
+    "Aura que cura aliados próximos.",
+    "Meteoro flamejante em área.",
+    "Explosão de gelo que reduz velocidade.",
+    "Marca inimigo para receber dano extra.",
+    "Armadura de luz reduz dano físico.",
+    "Esfera de escuridão que consome mana.",
+    "Invocação de lobo espiritual.",
+    "Golpe com dano crítico aumentado.",
+    "Revive automaticamente após morte.",
+    "Corrente elétrica que paralisa.",
+    "Aumenta chance de crítico por 10s.",
+    "Estaca perfurante com dano aumentado.",
+    "Grito inspirador aumenta ataque de aliados.",
+    "Espada flamejante com dano contínuo.",
+    "Disparo gélido com chance de congelar.",
+    "Área proibida que reduz cura inimiga.",
+    "Barreira que reflete feitiços.",
+    "Sombra que duplica ataques por 3s.",
+    "Arco espiritual com disparo duplo.",
+    "Explosão solar que cega inimigos.",
+    "Aura de proteção reduz dano recebido.",
+    "Espada relâmpago que atordoa.",
+    "Invocação de espectros atacantes.",
+    "Corrente de escuridão que prende.",
+    "Luz purificadora remove maldições.",
+    "Destruição massiva em área.",
+    "Ressurreição total com custo de mana."
+  ];
+
+  for (let i = 1; i <= 50; i++) {
+    habilidades[`${i}.png`] = {
+      nivel: i === 1 ? 1 : 14 + i,
+      descricao: descricoes[i - 1] || "Habilidade misteriosa."
+    };
+  }
 
   document.querySelectorAll(".icon").forEach(icon => {
     icon.addEventListener("click", () => {
