@@ -40,73 +40,82 @@
 }
 
   </style>
-</head><body>
-  <div class="tree-container">
-    <div class="row" id="row1">
-      <div class="icon" style="background-image: url(1.png);"></div>
-      <div class="icon" style="background-image: url(2.png);"></div>
-      <div class="icon" style="background-image: url(3.png);"></div>
-      <div class="icon" style="background-image: url(4.png);"></div>
-      <div class="icon" style="background-image: url(5.png);"></div>
-      <div class="icon" style="background-image: url(6.png);"></div>
-      <div class="icon" style="background-image: url(7.png);"></div>
-    </div>
-    <div class="row" id="row2">
-      <div class="icon" style="background-image: url(8.png);"></div>
-      <div class="icon" style="background-image: url(9.png);"></div>
-      <div class="icon" style="background-image: url(10.png);"></div>
-      <div class="icon" style="background-image: url(11.png);"></div>
-      <div class="icon" style="background-image: url(12.png);"></div>
-      <div class="icon" style="background-image: url(13.png);"></div>
-      <div class="icon" style="background-image: url(14.png);"></div>
-    </div>
-    <div class="row" id="row3">
-      <div class="icon" style="background-image: url(15.png);"></div>
-      <div class="icon" style="background-image: url(16.png);"></div>
-      <div class="icon" style="background-image: url(17.png);"></div>
-      <div class="icon" style="background-image: url(18.png);"></div>
-      <div class="icon" style="background-image: url(19.png);"></div>
-      <div class="icon" style="background-image: url(20.png);"></div>
-      <div class="icon" style="background-image: url(21.png);"></div>
-    </div>
-    <div class="row" id="row4">
-      <div class="icon" style="background-image: url(22.png);"></div>
-      <div class="icon" style="background-image: url(23.png);"></div>
-      <div class="icon" style="background-image: url(24.png);"></div>
-      <div class="icon" style="background-image: url(25.png);"></div>
-      <div class="icon" style="background-image: url(26.png);"></div>
-      <div class="icon" style="background-image: url(27.png);"></div>
-      <div class="icon" style="background-image: url(28.png);"></div>
-    </div>
-    <div class="row" id="row5">
-      <div class="icon" style="background-image: url(29.png);"></div>
-      <div class="icon" style="background-image: url(30.png);"></div>
-      <div class="icon" style="background-image: url(31.png);"></div>
-      <div class="icon" style="background-image: url(32.png);"></div>
-      <div class="icon" style="background-image: url(33.png);"></div>
-      <div class="icon" style="background-image: url(34.png);"></div>
-      <div class="icon" style="background-image: url(35.png);"></div>
-    </div>
-    <div class="row" id="row6">
-      <div class="icon" style="background-image: url(36.png);"></div>
-      <div class="icon" style="background-image: url(37.png);"></div>
-      <div class="icon" style="background-image: url(38.png);"></div>
-      <div class="icon" style="background-image: url(39.png);"></div>
-      <div class="icon" style="background-image: url(40.png);"></div>
-      <div class="icon" style="background-image: url(41.png);"></div>
-      <div class="icon" style="background-image: url(42.png);"></div>
-    </div>
-    <div class="row" id="row7">
-      <div class="icon" style="background-image: url(43.png);"></div>
-      <div class="icon" style="background-image: url(44.png);"></div>
-      <div class="icon" style="background-image: url(45.png);"></div>
-      <div class="icon" style="background-image: url(46.png);"></div>
-      <div class="icon" style="background-image: url(47.png);"></div>
-      <div class="icon" style="background-image: url(48.png);"></div>
-      <div class="icon" style="background-image: url(49.png);"></div>
-    </div>
-    <div class="row" id="row8">
-      <div class="icon" style="background-image: url(50.png);"></div>
-    </div>
-  </div>
-</body></html>
+<script>
+  function getSkillInfoByFilename(filename) {
+    const skills = {
+      "1.png": "Invoca uma lâmina de luz que corta inimigos em linha reta.",
+      "2.png": "Cria uma barreira mágica que reduz dano recebido.",
+      "3.png": "Lança uma esfera flamejante que explode ao colidir.",
+      "4.png": "Conjura um feitiço de cura gradual ao longo do tempo.",
+      "5.png": "Aumenta temporariamente a velocidade de movimento.",
+      "6.png": "Convoca uma sombra para lutar ao seu lado.",
+      "7.png": "Libera uma rajada de vento que empurra inimigos.",
+      "8.png": "Lança relâmpagos em área ao seu redor.",
+      "9.png": "Atira flechas mágicas que seguem o inimigo.",
+      "10.png": "Cria raízes que imobilizam inimigos no chão.",
+      "11.png": "Buff que aumenta o ataque físico por 10 segundos.",
+      "12.png": "Explosão sombria que corrompe os alvos atingidos.",
+      "13.png": "Convoca uma lança espiritual que perfura defesas.",
+      "14.png": "Proteção divina: reduz dano mágico por 15 segundos.",
+      "15.png": "Marca inimigos e revela sua posição por 10s.",
+      "16.png": "Grito de guerra que inspira aliados próximos.",
+      "17.png": "Desintegra armaduras, reduzindo defesa dos inimigos.",
+      "18.png": "Lança uma esfera congelante que reduz velocidade.",
+      "19.png": "Evoca um meteoro que causa dano em área.",
+      "20.png": "Cria uma cópia ilusória do jogador.",
+      "21.png": "Cura instantânea de uma pequena quantidade de vida.",
+      "22.png": "Luz purificadora que remove debuffs.",
+      "23.png": "Conjura um martelo etéreo que atinge vários inimigos.",
+      "24.png": "Explosão arcana concentrada em um único inimigo.",
+      "25.png": "Barreira elemental que absorve um ataque.",
+      "26.png": "Campo de silêncio que impede conjuração.",
+      "27.png": "Rajada de chamas contínuas por 3 segundos.",
+      "28.png": "Forma etérea: atravessa inimigos e obstáculos.",
+      "29.png": "Selo de fé que aumenta cura recebida.",
+      "30.png": "Garras sombrias que dilaceram a alma do inimigo.",
+      "31.png": "Evoca um tornado instável por 5 segundos.",
+      "32.png": "Coroa de espinhos: dano de reflexão.",
+      "33.png": "Toque do flagelo: debuff de defesa no inimigo.",
+      "34.png": "Flecha sagrada que ignora defesa mágica.",
+      "35.png": "Aura da ruína: reduz cura de inimigos próximos.",
+      "36.png": "Espinhos do abismo: surge do chão causando dano.",
+      "37.png": "Grito da Banshee que causa medo em área.",
+      "38.png": "Correntes mágicas que prendem múltiplos alvos.",
+      "39.png": "Encantamento que aumenta dano crítico.",
+      "40.png": "Tremor do solo: dano em área e lentidão.",
+      "41.png": "Proteção ancestral: escudo que bloqueia feitiços.",
+      "42.png": "Dança da lâmina: múltiplos cortes rápidos.",
+      "43.png": "Bênção solar: buff de força e resistência.",
+      "44.png": "Marca sombria: reduz evasão do alvo.",
+      "45.png": "Punho flamejante: ataque corpo-a-corpo com fogo.",
+      "46.png": "Raio divino: dano direto em alvo único.",
+      "47.png": "Espectro vingativo que persegue o inimigo.",
+      "48.png": "Cúpula do julgamento: dano sagrado em área.",
+      "49.png": "Espada sagrada: dano elevado e efeito de cura.",
+      "50.png": "Última bênção: revive com metade da vida."
+    };
+
+    return skills[filename] || "Habilidade misteriosa e desconhecida.";
+  }
+
+  function showSkillInfo(event) {
+    const bg = event.target.style.backgroundImage;
+    const match = bg.match(/([0-9]+\.png)/);
+    if (match) {
+      const filename = match[1];
+      const description = getSkillInfoByFilename(filename);
+      document.getElementById("skillTitle").textContent = "Skill #" + filename.replace(".png", "");
+      document.getElementById("skillDescription").textContent = description;
+      document.getElementById("skillInfo").style.display = "block";
+    }
+  }
+
+  window.addEventListener('load', () => {
+    const icons = document.querySelectorAll('.icon');
+    icons.forEach(icon => {
+      icon.addEventListener('click', showSkillInfo);
+    });
+
+    connectIcons();
+  });
+</script>
